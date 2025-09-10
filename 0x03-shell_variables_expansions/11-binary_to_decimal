@@ -1,0 +1,7 @@
+#!/bin/bash
+n=0
+for (( i=0; i<${#BINARY}; i++ )); do
+    digit=${BINARY:$i:1}
+    n=$(( n * 2 + digit ))
+done
+echo $n
